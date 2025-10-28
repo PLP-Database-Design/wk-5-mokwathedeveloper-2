@@ -88,13 +88,24 @@
 
 | ID | Feature | Objective | Expected Result | Actual Result | Status | Risk Link |
 |----|---------|-----------|----------------|---------------|--------|-----------|
-| | | | | | | |
+| TC01 | Leaderboard | Verify that leaderboard data persists after browser refresh | Leaderboard retains top 3 scores after reload | The Leaderboard retains top 3 scores after reload | Passed | R1 |
+| TC02 | Leaderboard | Check leaderboard persistence after clearing cache or localStorage | Leaderboard data should not be cleared, backup/export option should be available | Leaderboard data is cleared, backup/export option should be available | Failed | R1 |
+| TC03 | Bonus Round | Validate bonus calculation when base score = 0 | Bonus multiplier applies correctly without negative or zero output | Bonus multiplier applies correctly without negative or zero output | Passed | R2 |  
+| TC04 | Reset Game | Confirm app resets score and progress instantly | Score resets to 0; all states cleared | The score resets to 0; all states cleared | Passed | R3 |  
+| TC05 | Reset Game | Verify confirmation before reset | The user should receives “Are you sure?” confirmation prompt before data loss | The game reset automatically without confirmation prompt | Failed | R3 |
+|TC06 | Leaderboard | Ensure leaderboard sorts correctly when multiple players have same score | Scores with same value should appear in correct order(alphabetically based on player name or number) | Score is with same value not differentiated  | Failed | R4 |  
+| TC07 | Bonus Round | Confirm bonus trigger activates after every 3 puzzles | Bonus applies correctly every 3 solved puzzles | Bonus applies correctly every 3 solved puzzles | Passed | R5 |
+| TC08 | Usability | Check if rules and scoring info are easily accessible to new users | Users can find rules within 1 click and understand gameplay | Users can find rules within 1 click and understand gameplay | Passed| R6 |
+| TC09 | Usability | Test first-time player experience without reading the rules | Users understand how bonus works without reading long text| Users struggle to understand scoring until after first few rounds | Failed | R6|
 
 ## Defects
 
 | ID | Issue Title | Severity | Risk ID | Status | GitHub Link |
 |----|-------------|----------|---------|--------|-------------|
-| | | | | | |
+| D1 | Leaderboard data lost permanently after cache clear | High | R1 | Open | https://github.com/PLP-Database-Design/wk-5-mokwathedeveloper-2/issues/5#issue-3559396201  |
+| D2 | Reset Game lacks confirmation dialog | Medium | R3 | Open | https://github.com/PLP-Database-Design/wk-5-mokwathedeveloper-2/issues/6#issue-3559399201 |
+| D3 | Leaderbaord sortin inconsistency when multiple identical scores | Medium | R4 | Open | https://github.com/PLP-Database-Design/wk-5-mokwathedeveloper-2/issues/7#issue-3559401840 |
+| D4 | Bonus explanation unclear to new users | Low | R6 | Open | https://github.com/PLP-Database-Design/wk-5-mokwathedeveloper-2/issues/8#issue-3559416067 |
 
 ## Metrics
 
@@ -135,9 +146,9 @@
 
 | Name | Role | Initials | Date |
 |------|------|-----------|------|
-| | Test Manager | | |
-| | Risk Analyst | | |
-| | Test Executor | | |
+| | Test Manager | | 28th Oct 2025 |
+| | Risk Analyst | | 28th Oct 2025 |
+| Olaleye Ibrahim | Test Executor | OI | 28th Oct 2025 |
 
 ## Overall Summary
 
