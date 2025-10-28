@@ -67,9 +67,9 @@
 
 | Phase | Planned Duration | Actual Duration | Status |
 |---|---|---|---|
-| Planning & Risk Analysis | Day 1 | | |
-| Test Design & Execution | Day 1 | | |
-| Reporting & Finalization | Day 2 | | |
+| Planning & Risk Analysis | 2 Hours | | In Progress |
+| Test Design & Execution | 3 Hours | | To Do |
+| Reporting & Finalization | 2 Hours | | To Do |
 
 ## Risk Analysis
 
@@ -109,34 +109,37 @@
 
 ## Metrics
 
-- Test Case Pass Percent: 
-- Defect Density: 
-- Risk Coverage Percent: 
-- Regression Success Rate: 
+- Test Case Pass Percent: 56%
+- Defect Density: 4 Defects / 9 Test Cases
+- Risk Coverage Percent: 100%
+- Regression Success Rate: N/A (Out of Scope)
 
 ### Defect Summary
 
-- Total Defects Logged: 
-- Critical High: 
-- Fix Rate: 
+- Total Defects Logged: 4
+- Critical High: 1
+- Fix Rate: 0%
 
 ## Test Control & Project Management
 
 ### Phases
 
 | Phase | Deliverable | Actual Output | Variance | Owner |
-|-------|-------------|---------------|----------|-------|
-| | | | | |
+|---|---|---|---|---|
+| Planning & Analysis | Test Plan & Risk Register | | | Test Manager, Risk Analyst |
+| Test Design | Completed Test Cases | | | Risk Analyst, All Members |
+| Execution & Reporting | Execution Results & Defect Logs | | | Test Executor |
+| Finalization | Final Report & Metrics | | | Test Manager |
 
-**Progress Tracking Method:**  
-**Change Control Notes:**
+**Progress Tracking Method:** GitHub Projects & Issues will be used to track tasks, progress, and defects.  
+**Change Control Notes:** Any changes to the project scope, schedule, or plan will be documented and approved via GitHub Issues before implementation.
 
 ## Lessons Learned
 
-- Most Defect Prone Feature: 
-- Risk Analysis Impact: 
-- Team Communication Effectiveness: 
-- Improvements for Next Cycle: 
+- Most Defect Prone Feature: Leaderboard persistence(due to localStorage dependency)  
+- Risk Analysis Impact: Helped prioritize tests on storage and scoring logic  
+- Team Communication Effectiveness: Smooth coordination throught WhatApp and shared sheet  
+- Improvements for Next Cycle: Add Mobile browser and autommate leeaderboard validation   
 
 ## Attachments
 
